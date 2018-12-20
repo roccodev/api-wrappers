@@ -2,12 +2,6 @@
 name = "roccodev-api"
 version = "1.1.0"
 authors = ["RoccoDev <roccodev.business@gmail.com>"]
-
-[dependencies]
-curl = "0.4.19"
-serde_json = "1.0"
-
-[package]
 description = "Rust library for RoccoDev's API."
 documentation = "https://api.roccodev.pw/docs"
 homepage = "https://api.roccodev.pw"
@@ -15,3 +9,7 @@ repository = "https://github.com/RoccoDev/api-wrappers"
 readme = "README.md"
 keywords = ["roccodev", "api", "monthlies"]
 license = "MIT"
+
+[dependencies]
+curl = "0.4.19"
+serde_json = "1.0"
