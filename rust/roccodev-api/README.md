@@ -4,7 +4,7 @@
 Add this to your dependencies
 ```
 [dependencies]
-roccodev-api = 1.1.1
+roccodev-api = 1.2.0
 ```
 
 ## Usage
