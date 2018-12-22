@@ -1,6 +1,7 @@
 use super::http;
+use {Profile, Leaderboard};
 
-pub fn leaderboard(mode: &String, start: Option<usize>, end: Option<usize>) -> serde_json::Value {
+pub fn leaderboard(mode: &str, start: Option<usize>, end: Option<usize>) -> Leaderboard {
 
     let url;
     match start {
@@ -12,7 +13,7 @@ pub fn leaderboard(mode: &String, start: Option<usize>, end: Option<usize>) -> s
         
 }
 
-pub fn profile(mode: &String, uuid: &String) -> serde_json::Value {
+pub fn profile(mode: &str, uuid: &str) -> Profile {
     let url = format!("https://api.roccodev.pw/{}/winstreaks/profile/{}", mode, uuid);
     let json = http::json_from_url(url);
     return json; 
