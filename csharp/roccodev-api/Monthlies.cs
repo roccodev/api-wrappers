@@ -1,21 +1,16 @@
 using System.Collections.Generic;
 
 namespace roccodevapi {
-    public class Monthlies {
+    public class Monthlies<T> where T : MonthlyProfile {
 
-        private string mode;
 
-        public Monthlies(string mode) {
-            this.mode = mode;
+        public Dictionary<string, T> GetLeaderboard(int start, int end) {
+            return HttpUtils.MoProfs<T>(start, end);
         }
 
-        public Dictionary<string, MonthlyProfile> GetLeaderboard(int start, int end) {
-            return HttpUtils.MoProfs(mode, start, end);
-        }
-
-        public MonthlyProfile GetProfile(string uuid)
+        public T GetProfile(string uuid)
         {
-            return HttpUtils.MoProf(mode, uuid);
+            return HttpUtils.MoProf<T>(uuid);
         }
 
 

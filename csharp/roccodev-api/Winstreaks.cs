@@ -1,21 +1,15 @@
 using System.Collections.Generic;
 
 namespace roccodevapi {
-    public class Winstreaks {
+    public class Winstreaks<T> where T : WinstreakProfile {
 
-        private string mode;
-
-        public Winstreaks(string mode) {
-            this.mode = mode;
+        public Dictionary<string, T> GetLeaderboard(int start, int end) {
+            return HttpUtils.WiProfs<T>(start, end);
         }
 
-        public Dictionary<string, MonthlyProfile> GetLeaderboard(int start, int end) {
-            return HttpUtils.WiProfs(mode, start, end);
-        }
-
-        public MonthlyProfile GetProfile(string uuid)
+        public T GetProfile(string uuid)
         {
-            return HttpUtils.WiProf(mode, uuid);
+            return HttpUtils.WiProf<T>(uuid);
         }
 
 

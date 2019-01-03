@@ -3,7 +3,7 @@
     <PropertyGroup>
         <RootNamespace>csharp</RootNamespace>
         <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
-        <PackageVersion>1.2.0</PackageVersion>
+        <PackageVersion>1.4.0</PackageVersion>
         <Title>RoccoDev API</Title>
         <Description>C# wrapper for RoccoDev's API</Description>
         <Copyright>2019 RoccoDev</Copyright>
@@ -11,8 +11,11 @@
         <RepositoryUrl>https://github.com/api-wrappers</RepositoryUrl>
         <RepositoryType>Git</RepositoryType>
         <PackageTags>roccodev, hive, api, bedwars</PackageTags>
-        <PackageReleaseNotes>More targets</PackageReleaseNotes>
-        <TargetFrameworks>netstandard2.0;netcoreapp2.2</TargetFrameworks>
+        <PackageReleaseNotes>Now using Generics</PackageReleaseNotes>
+        <TargetFrameworks>netcoreapp2.1;net45</TargetFrameworks>
+        <ApplicationIcon />
+        <OutputType>Library</OutputType>
+        <StartupObject />
     </PropertyGroup>
 
     <ItemGroup>
@@ -22,6 +25,11 @@
     <ItemGroup>
       <Compile Remove="Class1.cs" />
       <Compile Remove="json\MonthlyProfiles.cs" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Reference Include="System.Net" />
+      <Reference Include="System.Net.Http" />
     </ItemGroup>
 
 </Project>
