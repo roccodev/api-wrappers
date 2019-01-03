@@ -5,13 +5,13 @@ using System.Text;
 
 namespace roccodevapi.monthly
 {
-    class BedMonthlyProfile : PvPMonthlyProfile
+    public class BedMonthlyProfile : PvPMonthlyProfile
     {
         public static new readonly string shortcode = "bed";
         public long beds;
         public long teams;
 
-        public string username;
-        public new string name { get => username; }
+        public string name;
+        public new string username { get => name; }
     }
 }

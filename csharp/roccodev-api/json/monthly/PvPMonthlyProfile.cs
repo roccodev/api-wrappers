@@ -4,7 +4,7 @@ using System.Text;
 
 namespace roccodevapi.monthly
 {
-    class PvPMonthlyProfile : roccodevapi.MonthlyProfile
+    public class PvPMonthlyProfile : roccodevapi.MonthlyProfile
     {
         public long kills;
         public long deaths;

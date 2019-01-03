@@ -3,11 +3,7 @@
 namespace roccodevapi {
 	public class MonthlyProfile {
 
-		/// <summary>
-		/// The name of the player.
-		/// For <b>every mode except BED</b>
-		/// </summary>
-		public string name;
+		public string username;
 
         public static readonly string shortcode = "";
 

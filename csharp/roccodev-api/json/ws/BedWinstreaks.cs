@@ -4,16 +4,16 @@ using System.Text;
 
 namespace roccodevapi.streak
 {
-    class BedWinstreakProfile : WinstreakProfile
+    public class BedWinstreakProfile : WinstreakProfile
     {
-        public static string ToString()
+        public static new string ToString()
         {
             return "bed";
         }
 
     }
 
-    class BedsWinstreakProfile : WinstreakProfile
+    public class BedsWinstreakProfile : WinstreakProfile
     {
         public static new string ToString()
         {
@@ -21,7 +21,7 @@ namespace roccodevapi.streak
         }
     }
 
-    class BeddWinstreakProfile : WinstreakProfile
+    public class BeddWinstreakProfile : WinstreakProfile
     {
         public static new string ToString()
         {
@@ -29,7 +29,7 @@ namespace roccodevapi.streak
         }
     }
 
-    class BedtWinstreakProfile : WinstreakProfile
+    public class BedtWinstreakProfile : WinstreakProfile
     {
         public static new string ToString()
         {
@@ -37,7 +37,7 @@ namespace roccodevapi.streak
         }
     }
 
-    class BedxWinstreakProfile : WinstreakProfile
+    public class BedxWinstreakProfile : WinstreakProfile
     {
         public static new string ToString()
         {

@@ -4,7 +4,7 @@ using System.Text;
 
 namespace roccodevapi.monthly
 {
-    class DrMonthlyProfile : PvPMonthlyProfile
+    public class DrMonthlyProfile : PvPMonthlyProfile
     {
         public static new readonly string shortcode = "dr";
     }

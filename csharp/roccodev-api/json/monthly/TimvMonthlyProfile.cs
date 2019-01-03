@@ -4,7 +4,7 @@ using System.Text;
 
 namespace roccodevapi.monthly
 {
-    class TimvMonthlyProfile : MonthlyProfile
+    public class TimvMonthlyProfile : MonthlyProfile
     {
         public static new readonly string shortcode = "timv";
         public string most_change;

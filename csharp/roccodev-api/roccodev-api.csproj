@@ -3,7 +3,7 @@
     <PropertyGroup>
         <RootNamespace>csharp</RootNamespace>
         <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
-        <PackageVersion>1.4.0</PackageVersion>
+        <PackageVersion>1.5.1</PackageVersion>
         <Title>RoccoDev API</Title>
         <Description>C# wrapper for RoccoDev's API</Description>
         <Copyright>2019 RoccoDev</Copyright>
@@ -11,7 +11,7 @@
         <RepositoryUrl>https://github.com/api-wrappers</RepositoryUrl>
         <RepositoryType>Git</RepositoryType>
         <PackageTags>roccodev, hive, api, bedwars</PackageTags>
-        <PackageReleaseNotes>Now using Generics</PackageReleaseNotes>
+        <PackageReleaseNotes>Fixed BED's name field</PackageReleaseNotes>
         <TargetFrameworks>netcoreapp2.1;net45</TargetFrameworks>
         <ApplicationIcon />
         <OutputType>Library</OutputType>
