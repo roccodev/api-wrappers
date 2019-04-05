@@ -11,15 +11,15 @@ const Monthlies = class {
   lb(start, end) {
     var url
     if(start)
-     url = `https://api.roccodev.pw/${this.game}/monthlies/leaderboard?from=${start}&to=${end}`
+     url = `https://api.rocco.dev/${this.game}/monthlies/leaderboard?from=${start}&to=${end}`
     else
-     url = `https://api.roccodev.pw/${this.game}/monthlies/leaderboard`
+     url = `https://api.rocco.dev/${this.game}/monthlies/leaderboard`
 
     return http(url)
   }
 
   profile(uuid) {
-    const url = `https://api.roccodev.pw/${this.game}/monthlies/profile/${uuid}`
+    const url = `https://api.rocco.dev/${this.game}/monthlies/profile/${uuid}`
     return http(url)
   }
 

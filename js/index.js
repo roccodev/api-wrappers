@@ -1,4 +1,4 @@
-const WS_BASE = "https://api.roccodev.pw/{game}/winstreaks/"
+const WS_BASE = "https://api.rocco.dev/{game}/winstreaks/"
 
 const Monthlies = require('./struc/monthlies.js')
 const Winstreaks = require('./struc/streaks.js')

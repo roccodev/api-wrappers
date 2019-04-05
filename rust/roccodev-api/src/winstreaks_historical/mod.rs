@@ -5,8 +5,8 @@ pub fn leaderboard(mode: &str, start: Option<usize>, end: Option<usize>) -> Lead
 
     let url;
     match start {
-        None => url = format!("https://api.roccodev.pw/{}/winstreaks/historical/leaderboard/", mode),
-        Some(ref start) => url = format!("https://api.roccodev.pw/{}/winstreaks/historical/leaderboard?from={}&to={}", mode, start, end.unwrap_or(500)),
+        None => url = format!("https://api.rocco.dev/{}/winstreaks/historical/leaderboard/", mode),
+        Some(ref start) => url = format!("https://api.rocco.dev/{}/winstreaks/historical/leaderboard?from={}&to={}", mode, start, end.unwrap_or(500)),
     }
     let json = http::json_from_url(url);
     return json;
@@ -14,7 +14,7 @@ pub fn leaderboard(mode: &str, start: Option<usize>, end: Option<usize>) -> Lead
 }
 
 pub fn profile(mode: &str, uuid: &str) -> Profile {
-    let url = format!("https://api.roccodev.pw/{}/winstreaks/historical/profile/{}", mode, uuid);
+    let url = format!("https://api.rocco.dev/{}/winstreaks/historical/profile/{}", mode, uuid);
     let json = http::json_from_url(url);
     return json; 
 }

@@ -10,15 +10,15 @@ const HistoricalWinstreaks = class {
   lb(start, end) {
     var url
     if(start)
-     url = `https://api.roccodev.pw/${this.game}/winstreaks/historical/leaderboard?from=${start}&to=${end}`
+     url = `https://api.rocco.dev/${this.game}/winstreaks/historical/leaderboard?from=${start}&to=${end}`
     else
-     url = `https://api.roccodev.pw/${this.game}/winstreaks/historical/leaderboard`
+     url = `https://api.rocco.dev/${this.game}/winstreaks/historical/leaderboard`
 
     return http(url)
   }
 
   profile(uuid) {
-    const url = `https://api.roccodev.pw/${this.game}/winstreaks/historical/profile/${uuid}`
+    const url = `https://api.rocco.dev/${this.game}/winstreaks/historical/profile/${uuid}`
     return http(url)
   }
 
